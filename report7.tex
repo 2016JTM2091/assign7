@@ -1,0 +1,228 @@
+\documentclass{article}
+\usepackage[hidelinks]{hyperref}
+\usepackage{filecontents}
+\usepackage{graphicx}
+\usepackage{wallpaper}
+\usepackage{mdframed}
+\usepackage{geometry}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+
+\Huge{\textbf{PROJECT REPORT}}
+\bigskip
+\huge{\textbf{ Telecommunication Software Lab}}\\
+\textsc{\textbf{ (ELP 718)}}\\
+[2cm]
+
+
+
+\includegraphics[scale=0.08]{iitd_logo.png}\\
+[2cm]
+\textbf{Submitted by:}\\
+
+
+\textbf{ JYOTIRMAY MAITY}\\
+
+\LARGE\textbf{ 2016JTM2091}\\
+\Large{\textbf{ 1st SEMESTER,2016}}\\
+\bigskip
+\bigskip
+\textbf{ASSIGNMENT : 7} \\
+\bigskip
+\textbf{Submission Date: 12th September, 2016}
+
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+\listoffigures
+\thispagestyle{empty}
+\cleardoublepage
+\setcounter{page}{1}
+
+\section{Introduction}
+
+\Large{\textbf{ Python:}}\\
+\textbf{Python} is a general-purpose interpreted, interactive, object-oriented, and high-level
+programming language. It was created by Guido van Rossum during 1985- 1990.
+Like Perl, Python source code is also available under the GNU General Public License(GPL).
+\vspace{10mm}
+
+
+Using python we can:
+\begin{itemize}
+\item Easy-to-learn: Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.
+\item Easy-to-read: Python code is more clearly defined and visible to the eyes.
+\item Easy-to-maintain: Python's source code is fairly easy-to-maintain.
+\item Databases: Python provides interfaces to all major commercial databases.
+\item Portable: Python can run on a wide variety of hardware platforms and has the
+same interface on all platforms.
+\end{itemize}
+\cleardoublepage
+
+\section{Problem Statement}
+\subsection{Problem Statement 1}
+In this problem we have to write a Python program that can take a big string (with spaces) as input from the command line and count number of times a word occurs in the string and also print the top 3 words in terms of their frequency of count.\\
+Also print the next permutation of each word appearing in the string.\\
+
+\subsection{Problem Statement 2}
+In problem 2 task is to  design a Graphical user Interface (GUI) to depict the location of a mobile user in a square whose corner points are (1,1) (-1,1) (1,-1)(-1,-1). In real life, the user’s location would come from a database available with the MSC. For the moment, generate the user location using the random function generator function in Python to generate a number between [0,1).\\
+Then check how many of user are inside the unit circle and calculate the percentage of that.
+
+\subsection{Problem Statement 3}
+Task is to design an addressing code for a shipping company that works all around India. The address given by the customer is split into fields of 
+\begin{itemize}
+
+\item Name, House No/colony/landmark
+\item City
+\item District
+\item State/Union Territory
+
+\end{itemize}
+
+Let's suppose at the intake the employer enters all the above data into the computer, now the coding machine has to build two codes out of the data.
+
+First is machine readable like barcodes, in the form 1’s and 0’s as:
+IIT Roorkee  = 001
+Roorkee= 010
+Uttarakhand = 100
+Hence the generated gives the collection center no. CCNO = 100010001
+
+Second is human readable, build by combination of first three letters of a place.
+For example :
+Prof. Ram Mishra
+D - 15, North Enclave
+IIT Roorkee, Roorkee
+Uttarakhand
+
+Hence human readable code HCCNO =  UTTROOIIT100010001\\
+
+Task is to create a database of some user and create functions to Add,Delete or Modify fields of the user.\\
+
+
+\cleardoublepage
+
+\section{Assumptions}
+\textbf{Problem 1:}\\
+In this problem assume the user should give a proper input from command line argument\\
+\textbf{Problem 2:}\\
+In problem statement 2, We assume user distance by creating a random number generator and calculate the percentage according to that.
+
+\textbf{Problem 3:}\\
+In problem statement 3, We assume that database is available when using the functions.
+\cleardoublepage
+
+
+
+\section{Implementation}
+
+Implemnnt the problems using Python programming language\\
+
+In problem 1:\\
+User is given input through command line.\\
+First take all the arguments and make a single string.\\
+To do that I have used a list to take the string value\\
+After getting the string we can count the word using inbuild function\\
+To use the inbuild function we have to import Counter from collections\\
+After getting the sorted word list task is to print the values.\\
+
+\bigskip
+
+In problem 2:\\
+First we have to import random and math to generate random number and calculate square root value.\\
+Define a variable to count the number of user within the circle.\\
+Take input to get the number of user\\
+Calculate the distance from the origin,if the value is less than 1 then increase the count variable\\
+So finall we get the number of user within the circle\\
+Calculate the percentage using simple equation and print the value.\\
+\bigskip
+
+In problem 3:\\
+Database is generated first\\
+create the functions to add,modify or delete value\\
+
+\cleardoublepage
+
+\section{Test Description and Result}
+In problem 1:\\
+After getting input from user program will calculate and print the top three word frequency on the screen\\
+\bigskip
+\bigskip
+
+In problem 2:\\
+After getting number of user it will calculate percentage of user within the circle and print the value on the screen\\
+
+
+\bigskip
+\bigskip
+
+
+
+
+\cleardoublepage
+
+\section{Screenshots}
+
+\begin{figure}[h]
+
+\includegraphics[scale=0.6]{prb1_7.png}
+\caption{Screen shot of problem no: 1}
+\end{figure}
+
+\cleardoublepage
+
+\begin{figure}
+
+\includegraphics[scale=0.58]{prb2_7.png}
+\caption{Screen shot of problem no: 2}
+\end{figure}
+\cleardoublepage
+
+\begin{figure}
+
+\includegraphics[scale=0.58]{github3.png}
+\caption{Screen shot of tracking commit in github: 2}
+\end{figure}
+\cleardoublepage
+
+\section{References and Citations}
+
+\begin{thebibliography}{9}
+\bibitem{IEEEhowto:kopka}
+Mark Pilgrim, \emph{Dive into Python}, 5th~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax India: BPB, 2010
+  
+\bibitem{latex}
+latex\\
+ \texttt{https://www.sharelatex.com}  
+ 
+ \bibitem{programming}
+Tutorial Point\\
+ \texttt{https://www.tutorialpoint.com}
+
+\bibitem{knuthwebsite}
+Google
+\\\texttt{http://www.google.com}
+ 
+  
+  
+  
+  
+\end{thebibliography}
+
+
+ 
+\cleardoublepage
+
+
+\section{Epilogue}
+The creation of database and function is a bit difficult.We can use this function as like sql command.\\
+problem 1 and 2 are quite understandable and easy to implement.\\
+
+
+
+\end{document}
